@@ -1,8 +1,8 @@
 describe('pokemonbattle_avatar', function () {    
     it('e2e_Avatar_buying', function () {   
         cy.visit('https://pokemonbattle.ru/login');
-        cy.get(':nth-child(1) > .auth__input').type('karlinheilig@gmail.com',{force: true});
-        cy.get('#password').type('Lohlohloh483',{force:true});
+        cy.get(':nth-child(1) > .auth__input').type('username',{force: true});
+        cy.get('#password').type('password',{force:true});
         cy.get('.auth__button').click({force: true});
         cy.wait(5000);
         cy.get('.header__container > .header__id').click({ force: true }); 
